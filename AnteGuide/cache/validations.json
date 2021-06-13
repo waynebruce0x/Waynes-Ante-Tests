@@ -1,0 +1,954 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteWBTCSupplyTest": {
+        "src": "contracts/AnteWBTCSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "8d141adbf0409e66ab6d5bb955d05f10eaa0825a79dcbf43a67384ef9e67ef80",
+          "withoutMetadata": "8d141adbf0409e66ab6d5bb955d05f10eaa0825a79dcbf43a67384ef9e67ef80",
+          "linkedWithoutMetadata": "8d141adbf0409e66ab6d5bb955d05f10eaa0825a79dcbf43a67384ef9e67ef80"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteWBTCSupplyTest",
+            "src": "contracts/AnteWBTCSupplyTest.sol:18"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "wBTCToken",
+            "src": "contracts/AnteWBTCSupplyTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteWBTCSupplyTest",
+              "label": "wBTCToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/AnteWBTCSupplyTest.sol:16"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteWBTCSupplyTest": {
+        "src": "contracts/AnteWBTCSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "87837fac0348256b4db699b19ea5eebcab61da34ccbc6410eb56eed54987c8d2",
+          "withoutMetadata": "87837fac0348256b4db699b19ea5eebcab61da34ccbc6410eb56eed54987c8d2",
+          "linkedWithoutMetadata": "87837fac0348256b4db699b19ea5eebcab61da34ccbc6410eb56eed54987c8d2"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteWBTCSupplyTest",
+            "src": "contracts/AnteWBTCSupplyTest.sol:18"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "wBTCToken",
+            "src": "contracts/AnteWBTCSupplyTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteWBTCSupplyTest",
+              "label": "wBTCAddr",
+              "type": "t_address",
+              "src": "contracts/AnteWBTCSupplyTest.sol:11"
+            },
+            {
+              "contract": "AnteWBTCSupplyTest",
+              "label": "wBTCToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/AnteWBTCSupplyTest.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteWBTCSupplyTest": {
+        "src": "contracts/AnteWBTCSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "715023ea8a1488079bab3e28d63adbb730fcfa74e9b955919adfedbdf5487276",
+          "withoutMetadata": "715023ea8a1488079bab3e28d63adbb730fcfa74e9b955919adfedbdf5487276",
+          "linkedWithoutMetadata": "715023ea8a1488079bab3e28d63adbb730fcfa74e9b955919adfedbdf5487276"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteWBTCSupplyTest",
+            "src": "contracts/AnteWBTCSupplyTest.sol:18"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "wBTCToken",
+            "src": "contracts/AnteWBTCSupplyTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteWBTCSupplyTest",
+              "label": "wBTCToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/AnteWBTCSupplyTest.sol:16"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "BasicToken": {
+        "src": "contracts/WBTC.sol:79",
+        "version": {
+          "withMetadata": "b208687af3e54fc4fdced7876f5d10a6fb96e425a40534bcd5f3ee5f4c524b4b",
+          "withoutMetadata": "928ac3d04cb924bc9bdb6d717500fbffca21773564dcd9c24cabb194a28cf08e",
+          "linkedWithoutMetadata": "928ac3d04cb924bc9bdb6d717500fbffca21773564dcd9c24cabb194a28cf08e"
+        },
+        "inherit": [
+          "ERC20Basic"
+        ],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "totalSupply()",
+          "transfer(address,uint256)",
+          "balanceOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "BasicToken",
+              "label": "balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/WBTC.sol:82"
+            },
+            {
+              "contract": "BasicToken",
+              "label": "totalSupply_",
+              "type": "t_uint256",
+              "src": "contracts/WBTC.sol:84"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "BurnableToken": {
+        "src": "contracts/WBTC.sol:408",
+        "version": {
+          "withMetadata": "aab2f240f4f4a67fcaec52403c5771e868c757df10df9cba386b32abaeeba17c",
+          "withoutMetadata": "401ad887914c5c535464897296961149cc214336b507486ee22296f81064297b",
+          "linkedWithoutMetadata": "401ad887914c5c535464897296961149cc214336b507486ee22296f81064297b"
+        },
+        "inherit": [
+          "BasicToken",
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "burn(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "CanReclaimToken": {
+        "src": "contracts/WBTC.sol:628",
+        "version": {
+          "withMetadata": "0370e5b02ee5caee671365f3931abf74586e9320f0477c40286104aa1a8b8ba0",
+          "withoutMetadata": "378daa3698bfa7dce4b33c58b7dbdb2115df6f06bba235a2a44243d9b9ae6ce6",
+          "linkedWithoutMetadata": "378daa3698bfa7dce4b33c58b7dbdb2115df6f06bba235a2a44243d9b9ae6ce6"
+        },
+        "inherit": [
+          "Ownable"
+        ],
+        "libraries": [
+          "SafeERC20"
+        ],
+        "methods": [
+          "reclaimToken(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Claimable": {
+        "src": "contracts/WBTC.sol:550",
+        "version": {
+          "withMetadata": "a4628a8edac0ec6a156e02a0fbb6c094b0ae53d8590cbacb7b997c11ad49c5fe",
+          "withoutMetadata": "260d2e0bdf542cad0c46e83576d335e2402dda9cc3c6751efd2f67355d7cd095",
+          "linkedWithoutMetadata": "260d2e0bdf542cad0c46e83576d335e2402dda9cc3c6751efd2f67355d7cd095"
+        },
+        "inherit": [
+          "Ownable"
+        ],
+        "libraries": [],
+        "methods": [
+          "transferOwnership(address)",
+          "claimOwnership()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Claimable",
+              "label": "pendingOwner",
+              "type": "t_address",
+              "src": "contracts/WBTC.sol:551"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "DetailedERC20": {
+        "src": "contracts/WBTC.sol:269",
+        "inherit": [
+          "ERC20",
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string,string,uint8)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "DetailedERC20",
+              "label": "name",
+              "type": "t_string_storage",
+              "src": "contracts/WBTC.sol:270"
+            },
+            {
+              "contract": "DetailedERC20",
+              "label": "symbol",
+              "type": "t_string_storage",
+              "src": "contracts/WBTC.sol:271"
+            },
+            {
+              "contract": "DetailedERC20",
+              "label": "decimals",
+              "type": "t_uint8",
+              "src": "contracts/WBTC.sol:272"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20": {
+        "src": "contracts/WBTC.sol:125",
+        "inherit": [
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "allowance(address,address)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Basic": {
+        "src": "contracts/WBTC.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "MintableToken": {
+        "src": "contracts/WBTC.sol:352",
+        "version": {
+          "withMetadata": "5de3b00ba1464da10b910f8c53a5240c636679198d3e499509053a17591b00ee",
+          "withoutMetadata": "d80a8c1d2dae4094ddffc02da3fcbef7fba90cde862935d9ffb520583743b964",
+          "linkedWithoutMetadata": "d80a8c1d2dae4094ddffc02da3fcbef7fba90cde862935d9ffb520583743b964"
+        },
+        "inherit": [
+          "Ownable",
+          "StandardToken",
+          "BasicToken",
+          "ERC20",
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "mint(address,uint256)",
+          "finishMinting()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "mintingFinished",
+            "src": "contracts/WBTC.sol:356"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "MintableToken",
+              "label": "mintingFinished",
+              "type": "t_bool",
+              "src": "contracts/WBTC.sol:356"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ownable": {
+        "src": "contracts/WBTC.sol:288",
+        "version": {
+          "withMetadata": "7e73a715afc1475a4388b572b7b178ceff6e73a1e33274d664281cc448f94186",
+          "withoutMetadata": "57262a76013ff8487f4668072696bd649cac1763bfc1a7bbec995e0b63bc3670",
+          "linkedWithoutMetadata": "57262a76013ff8487f4668072696bd649cac1763bfc1a7bbec995e0b63bc3670"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/WBTC.sol:289"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "OwnableContract": {
+        "src": "contracts/WBTC.sol:645",
+        "version": {
+          "withMetadata": "241523f5fc678df34d5ea729419d9943883590e2fc4c4983265977746dc639f9",
+          "withoutMetadata": "db52f8996ff7987b09723afdd21e827b128139d6f7446512f83783d01c3ed518",
+          "linkedWithoutMetadata": "db52f8996ff7987b09723afdd21e827b128139d6f7446512f83783d01c3ed518"
+        },
+        "inherit": [
+          "Claimable",
+          "CanReclaimToken",
+          "Ownable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Pausable": {
+        "src": "contracts/WBTC.sol:438",
+        "version": {
+          "withMetadata": "7ff8ca00a0fef66e8b6d52b67cc6e6f9e8f8c985ff5374ee2fd35703713482e9",
+          "withoutMetadata": "3dd7184df1c2c48158657569d396a6b3be8cda6ce9133d0667962870afcb8dac",
+          "linkedWithoutMetadata": "3dd7184df1c2c48158657569d396a6b3be8cda6ce9133d0667962870afcb8dac"
+        },
+        "inherit": [
+          "Ownable"
+        ],
+        "libraries": [],
+        "methods": [
+          "pause()",
+          "unpause()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "paused",
+            "src": "contracts/WBTC.sol:442"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Pausable",
+              "label": "paused",
+              "type": "t_bool",
+              "src": "contracts/WBTC.sol:442"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "PausableToken": {
+        "src": "contracts/WBTC.sol:484",
+        "version": {
+          "withMetadata": "61bc2cca7af2778ff33c51fd219e9da6d222552e4c59e3206adb4f844720aca3",
+          "withoutMetadata": "0bd434aafa0522c6ded211094856d13d9a956a8985c11a5bbaedd88d59a3563a",
+          "linkedWithoutMetadata": "0bd434aafa0522c6ded211094856d13d9a956a8985c11a5bbaedd88d59a3563a"
+        },
+        "inherit": [
+          "Pausable",
+          "Ownable",
+          "StandardToken",
+          "BasicToken",
+          "ERC20",
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "increaseApproval(address,uint256)",
+          "decreaseApproval(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "contracts/WBTC.sol:587",
+        "version": {
+          "withMetadata": "bbcdf855fc8410436c52ed82e567de9b651d6b02c2835c320514fb1b3904de15",
+          "withoutMetadata": "6784c9bdde3ddff1c688b77760f8abee60b5ea4939b980505024050460e92688",
+          "linkedWithoutMetadata": "6784c9bdde3ddff1c688b77760f8abee60b5ea4939b980505024050460e92688"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "contracts/WBTC.sol:27",
+        "version": {
+          "withMetadata": "5f4ed07ce4e6ec3e123cd3f2859b5047d2572f4ae53a562dbf0af0b811509164",
+          "withoutMetadata": "6784c9bdde3ddff1c688b77760f8abee60b5ea4939b980505024050460e92688",
+          "linkedWithoutMetadata": "6784c9bdde3ddff1c688b77760f8abee60b5ea4939b980505024050460e92688"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "StandardToken": {
+        "src": "contracts/WBTC.sol:149",
+        "version": {
+          "withMetadata": "7f7a438a18822e211df7954ddaa9c90280868c7f181f25509be6eb5a42149c65",
+          "withoutMetadata": "172df8af41093896965771863123373f08dffcc3726a59e563cf1a7b28e18768",
+          "linkedWithoutMetadata": "172df8af41093896965771863123373f08dffcc3726a59e563cf1a7b28e18768"
+        },
+        "inherit": [
+          "BasicToken",
+          "ERC20",
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "allowance(address,address)",
+          "increaseApproval(address,uint256)",
+          "decreaseApproval(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StandardToken",
+              "label": "allowed",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/WBTC.sol:151"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "WBTC": {
+        "src": "contracts/WBTC.sol:649",
+        "version": {
+          "withMetadata": "b563ee7744d7f7ac147c05df9de1a40668be9221e0fead5024279eca9a84b4b8",
+          "withoutMetadata": "c3ec37230782ad878fbd310a9d59bdf5feb1d7019b2a8f5d2a20cf602ab9ea58",
+          "linkedWithoutMetadata": "c3ec37230782ad878fbd310a9d59bdf5feb1d7019b2a8f5d2a20cf602ab9ea58"
+        },
+        "inherit": [
+          "OwnableContract",
+          "Claimable",
+          "CanReclaimToken",
+          "PausableToken",
+          "Pausable",
+          "BurnableToken",
+          "MintableToken",
+          "Ownable",
+          "DetailedERC20",
+          "StandardToken",
+          "BasicToken",
+          "ERC20",
+          "ERC20Basic"
+        ],
+        "libraries": [],
+        "methods": [
+          "burn(uint256)",
+          "finishMinting()",
+          "renounceOwnership()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}
