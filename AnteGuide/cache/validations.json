@@ -171,6 +171,152 @@
       "AnteWBTCSupplyTest": {
         "src": "contracts/AnteWBTCSupplyTest.sol:9",
         "version": {
+          "withMetadata": "8d141adbf0409e66ab6d5bb955d05f10eaa0825a79dcbf43a67384ef9e67ef80",
+          "withoutMetadata": "8d141adbf0409e66ab6d5bb955d05f10eaa0825a79dcbf43a67384ef9e67ef80",
+          "linkedWithoutMetadata": "8d141adbf0409e66ab6d5bb955d05f10eaa0825a79dcbf43a67384ef9e67ef80"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteWBTCSupplyTest",
+            "src": "contracts/AnteWBTCSupplyTest.sol:18"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "wBTCToken",
+            "src": "contracts/AnteWBTCSupplyTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteWBTCSupplyTest",
+              "label": "wBTCToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/AnteWBTCSupplyTest.sol:16"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteWBTCSupplyTest": {
+        "src": "contracts/AnteWBTCSupplyTest.sol:9",
+        "version": {
           "withMetadata": "87837fac0348256b4db699b19ea5eebcab61da34ccbc6410eb56eed54987c8d2",
           "withoutMetadata": "87837fac0348256b4db699b19ea5eebcab61da34ccbc6410eb56eed54987c8d2",
           "linkedWithoutMetadata": "87837fac0348256b4db699b19ea5eebcab61da34ccbc6410eb56eed54987c8d2"

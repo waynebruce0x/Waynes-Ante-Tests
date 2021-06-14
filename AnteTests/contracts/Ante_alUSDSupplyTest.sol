@@ -30,36 +30,36 @@ contract Ante_alUSDSupplyTest is AnteTest("alUSD doesn't exceed DAI locked in Al
     }
     
     function checkTestPasses() public view override returns (bool) {
-        uint TransmuterVL = DAIToken.balanceOf(0xaB7A49B971AFdc7Ee26255038C82b4006D122086) / 1e18;
-        uint AlchemistVL = DAIToken.balanceOf(0xc21D353FF4ee73C572425697f4F5aaD2109fe35b) / 1e18;
-        uint TransmuterBVL = DAIToken.balanceOf(0xf3cFfaEEa177Db444b68FB6f033d4a82f6D8C82d) / 1e18;
-        uint AlchemistYVAVL = yvDAIToken.balanceOf(0x014dE182c147f8663589d77eAdB109Bf86958f13) / 1e18;
-        uint TransmuterBYVAVL = yvDAIToken.balanceOf(0x491EAFC47D019B44e13Ef7cC649bbA51E15C61d7) / 1e18;
+        uint TransmuterVL = DAIToken.balanceOf(TransmuterAddr) / 1e18;
+        uint AlchemistVL = DAIToken.balanceOf(AlchemistAddr) / 1e18;
+        uint TransmuterBVL = DAIToken.balanceOf(TransmuterBAddr) / 1e18;
+        uint AlchemistYVAVL = yvDAIToken.balanceOf(AlchemistYVAAddr) / 1e18;
+        uint TransmuterBYVAVL = yvDAIToken.balanceOf(TransmuterBYVAddr) / 1e18;
         uint TotalValueLocked = TransmuterVL + AlchemistVL + TransmuterBVL + AlchemistYVAVL + TransmuterBYVAVL;
         uint TotalSupply = alUSDToken.totalSupply() / 1e18;
         return (TotalSupply <= TotalValueLocked);
     }
     function CheckTransmuterVL() public view returns (uint) {
-        return DAIToken.balanceOf(0xaB7A49B971AFdc7Ee26255038C82b4006D122086) / 1e18;
+        return DAIToken.balanceOf(TransmuterAddr) / 1e18;
     }
     function CheckAlchemistVL() public view returns (uint) {
-        return DAIToken.balanceOf(0xc21D353FF4ee73C572425697f4F5aaD2109fe35b) / 1e18;
+        return DAIToken.balanceOf(AlchemistAddr) / 1e18;
     }
     function CheckTransmuterBVL() public view returns (uint) {
-        return DAIToken.balanceOf(0xf3cFfaEEa177Db444b68FB6f033d4a82f6D8C82d) / 1e18;
+        return DAIToken.balanceOf(TransmuterBAddr) / 1e18;
     }
     function CheckAlchemistYVAVL() public view returns (uint) {
-        return yvDAIToken.balanceOf(0x014dE182c147f8663589d77eAdB109Bf86958f13) / 1e18;
+        return yvDAIToken.balanceOf(AlchemistYVAAddr) / 1e18;
     }
     function CheckTransmuterBYVAVL() public view returns (uint) {
-        return yvDAIToken.balanceOf(0x491EAFC47D019B44e13Ef7cC649bbA51E15C61d7) / 1e18;
+        return yvDAIToken.balanceOf(TransmuterBYVAddr) / 1e18;
     }
     function checkBalance() public view returns (uint) {
-        uint TransmuterVL = DAIToken.balanceOf(0xaB7A49B971AFdc7Ee26255038C82b4006D122086) / 1e18;
-        uint AlchemistVL = DAIToken.balanceOf(0xc21D353FF4ee73C572425697f4F5aaD2109fe35b) / 1e18;
-        uint TransmuterBVL = DAIToken.balanceOf(0xf3cFfaEEa177Db444b68FB6f033d4a82f6D8C82d) / 1e18;
-        uint AlchemistYVAVL = yvDAIToken.balanceOf(0x014dE182c147f8663589d77eAdB109Bf86958f13) / 1e18;
-        uint TransmuterBYVAVL = yvDAIToken.balanceOf(0x491EAFC47D019B44e13Ef7cC649bbA51E15C61d7) / 1e18;
+        uint TransmuterVL = DAIToken.balanceOf(TransmuterAddr) / 1e18;
+        uint AlchemistVL = DAIToken.balanceOf(AlchemistAddr) / 1e18;
+        uint TransmuterBVL = DAIToken.balanceOf(TransmuterBAddr) / 1e18;
+        uint AlchemistYVAVL = yvDAIToken.balanceOf(AlchemistYVAAddr) / 1e18;
+        uint TransmuterBYVAVL = yvDAIToken.balanceOf(TransmuterBYVAddr) / 1e18;
         return TransmuterVL + AlchemistVL + TransmuterBVL + AlchemistYVAVL + TransmuterBYVAVL;
     }
     function checkCirculating() public view returns (uint) {

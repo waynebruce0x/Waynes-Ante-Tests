@@ -22,6 +22,586 @@
           "layoutVersion": "1.1"
         }
       },
+      "Ante_alETHSupplyTest": {
+        "src": "contracts/Ante_alETHSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "f723997fdefe9d2eb44da22c349d52e1d4560c94f00c93326801cc0e970f41d7",
+          "withoutMetadata": "f723997fdefe9d2eb44da22c349d52e1d4560c94f00c93326801cc0e970f41d7",
+          "linkedWithoutMetadata": "f723997fdefe9d2eb44da22c349d52e1d4560c94f00c93326801cc0e970f41d7"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()",
+          "CheckTransmuterVL()",
+          "CheckAlchemistVL()",
+          "CheckAlchemistYVAVL()",
+          "CheckTransmuterBYVAVL()",
+          "checkBalance()",
+          "checkCirculating()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ante_alETHSupplyTest",
+            "src": "contracts/Ante_alETHSupplyTest.sol:26"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "alETHToken",
+            "src": "contracts/Ante_alETHSupplyTest.sol:22"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "WETHToken",
+            "src": "contracts/Ante_alETHSupplyTest.sol:23"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "yvWETHToken",
+            "src": "contracts/Ante_alETHSupplyTest.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ante_alETHSupplyTest",
+              "label": "alETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alETHSupplyTest.sol:22"
+            },
+            {
+              "contract": "Ante_alETHSupplyTest",
+              "label": "WETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alETHSupplyTest.sol:23"
+            },
+            {
+              "contract": "Ante_alETHSupplyTest",
+              "label": "yvWETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alETHSupplyTest.sol:24"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ante_alETHSupplyTest": {
+        "src": "contracts/Ante_alETHSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "aa2b4810cd71c76b78c87f43fe307b9ca2944c9dde703a94ae6ce0a647e2ede0",
+          "withoutMetadata": "aa2b4810cd71c76b78c87f43fe307b9ca2944c9dde703a94ae6ce0a647e2ede0",
+          "linkedWithoutMetadata": "aa2b4810cd71c76b78c87f43fe307b9ca2944c9dde703a94ae6ce0a647e2ede0"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()",
+          "CheckTransmuterVL()",
+          "CheckAlchemistVL()",
+          "CheckAlchemistYVAVL()",
+          "CheckTransmuterBYVAVL()",
+          "checkBalance()",
+          "checkCirculating()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ante_alETHSupplyTest",
+            "src": "contracts/Ante_alETHSupplyTest.sol:26"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "alETHToken",
+            "src": "contracts/Ante_alETHSupplyTest.sol:22"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "WETHToken",
+            "src": "contracts/Ante_alETHSupplyTest.sol:23"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "yvWETHToken",
+            "src": "contracts/Ante_alETHSupplyTest.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ante_alETHSupplyTest",
+              "label": "alETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alETHSupplyTest.sol:22"
+            },
+            {
+              "contract": "Ante_alETHSupplyTest",
+              "label": "WETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alETHSupplyTest.sol:23"
+            },
+            {
+              "contract": "Ante_alETHSupplyTest",
+              "label": "yvWETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alETHSupplyTest.sol:24"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteLidoSupplyTest": {
+        "src": "contracts/AnteLidoSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "bd9f9d0d01d8c09ce777a43a39b734d36706161829e2f1426cf1caa6fa62bc28",
+          "withoutMetadata": "bd9f9d0d01d8c09ce777a43a39b734d36706161829e2f1426cf1caa6fa62bc28",
+          "linkedWithoutMetadata": "bd9f9d0d01d8c09ce777a43a39b734d36706161829e2f1426cf1caa6fa62bc28"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteLidoSupplyTest",
+            "src": "contracts/AnteLidoSupplyTest.sol:20"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "wstETHToken",
+            "src": "contracts/AnteLidoSupplyTest.sol:17"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "stETHToken",
+            "src": "contracts/AnteLidoSupplyTest.sol:18"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteLidoSupplyTest",
+              "label": "wstETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/AnteLidoSupplyTest.sol:17"
+            },
+            {
+              "contract": "AnteLidoSupplyTest",
+              "label": "stETHToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/AnteLidoSupplyTest.sol:18"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ante_alUSDSupplyTest": {
+        "src": "contracts/Ante_alUSDSupplyTest.sol:9",
+        "version": {
+          "withMetadata": "5ebcc78d3514b2773a3b8bd9c26c9524c4e6d8f31ac3c96793aaf9e57b17f304",
+          "withoutMetadata": "5ebcc78d3514b2773a3b8bd9c26c9524c4e6d8f31ac3c96793aaf9e57b17f304",
+          "linkedWithoutMetadata": "5ebcc78d3514b2773a3b8bd9c26c9524c4e6d8f31ac3c96793aaf9e57b17f304"
+        },
+        "inherit": [
+          "AnteTest",
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "checkTestPasses()",
+          "CheckTransmuterVL()",
+          "CheckAlchemistVL()",
+          "CheckTransmuterBVL()",
+          "CheckAlchemistYVAVL()",
+          "CheckTransmuterBYVAVL()",
+          "checkBalance()",
+          "checkCirculating()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ante_alUSDSupplyTest",
+            "src": "contracts/Ante_alUSDSupplyTest.sol:27"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "DAIToken",
+            "src": "contracts/Ante_alUSDSupplyTest.sol:23"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "alUSDToken",
+            "src": "contracts/Ante_alUSDSupplyTest.sol:24"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "yvDAIToken",
+            "src": "contracts/Ante_alUSDSupplyTest.sol:25"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ante_alUSDSupplyTest",
+              "label": "DAIToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alUSDSupplyTest.sol:23"
+            },
+            {
+              "contract": "Ante_alUSDSupplyTest",
+              "label": "alUSDToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alUSDSupplyTest.sol:24"
+            },
+            {
+              "contract": "Ante_alUSDSupplyTest",
+              "label": "yvDAIToken",
+              "type": "t_contract(IERC20)77",
+              "src": "contracts/Ante_alUSDSupplyTest.sol:25"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)77": {
+              "label": "contract IERC20"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AnteTest": {
+        "src": "contracts/interfaces/AnteTest.sol:9",
+        "inherit": [
+          "IAnteTest"
+        ],
+        "libraries": [],
+        "methods": [
+          "getTestedContracts()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AnteTest",
+            "src": "contracts/interfaces/AnteTest.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AnteTest",
+              "label": "testAuthor",
+              "type": "t_address",
+              "src": "contracts/interfaces/AnteTest.sol:10"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:11"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "protocolName",
+              "type": "t_string_storage",
+              "src": "contracts/interfaces/AnteTest.sol:12"
+            },
+            {
+              "contract": "AnteTest",
+              "label": "testedContracts",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/interfaces/AnteTest.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAnteTest": {
+        "src": "contracts/interfaces/IAnteTest.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "testAuthor()",
+          "protocolName()",
+          "testedContracts(uint256)",
+          "testName()",
+          "checkTestPasses()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
       "Ante_alUSDSupplyTest": {
         "src": "contracts/Ante_alUSDSupplyTest.sol:9",
         "version": {
